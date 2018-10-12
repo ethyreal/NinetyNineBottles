@@ -10,6 +10,7 @@
 		E7180CD7217156B600A4BA5E /* NinetyNineBottles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7180CCD217156B600A4BA5E /* NinetyNineBottles.framework */; };
 		E7180CDC217156B600A4BA5E /* NinetyNineBottlesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7180CDB217156B600A4BA5E /* NinetyNineBottlesTests.swift */; };
 		E7180CDE217156B600A4BA5E /* NinetyNineBottles.h in Headers */ = {isa = PBXBuildFile; fileRef = E7180CD0217156B600A4BA5E /* NinetyNineBottles.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7180CEA217159D600A4BA5E /* Bottles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7180CE9217159D600A4BA5E /* Bottles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		E7180CD6217156B600A4BA5E /* NinetyNineBottlesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NinetyNineBottlesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7180CDB217156B600A4BA5E /* NinetyNineBottlesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NinetyNineBottlesTests.swift; sourceTree = "<group>"; };
 		E7180CDD217156B600A4BA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7180CE9217159D600A4BA5E /* Bottles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bottles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 		E7180CCF217156B600A4BA5E /* NinetyNineBottles */ = {
 			isa = PBXGroup;
 			children = (
+				E7180CE9217159D600A4BA5E /* Bottles.swift */,
 				E7180CD0217156B600A4BA5E /* NinetyNineBottles.h */,
 				E7180CD1217156B600A4BA5E /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					E7180CCC217156B600A4BA5E = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					E7180CD5217156B600A4BA5E = {
 						CreatedOnToolsVersion = 10.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7180CEA217159D600A4BA5E /* Bottles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +346,7 @@
 		E7180CE2217156B600A4BA5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -357,6 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ethyreal.NinetyNineBottles;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -365,6 +372,7 @@
 		E7180CE3217156B600A4BA5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -389,6 +397,7 @@
 		E7180CE5217156B600A4BA5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NinetyNineBottlesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -406,6 +415,7 @@
 		E7180CE6217156B600A4BA5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NinetyNineBottlesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
