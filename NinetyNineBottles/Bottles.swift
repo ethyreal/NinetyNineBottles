@@ -12,9 +12,6 @@ struct Bottles {
     
     func verse(_ count:Int) -> String {
         switch count {
-        case 2:
-            return "2 bottles of beer on the wall, 2 bottles of beer.\n"
-                + "Take one down and pass it around, 1 bottle of beer on the wall.\n"
         case 1:
             return "1 bottle of beer on the wall, 1 bottle of beer.\n"
                 + "Take it down and pass it around, no more bottles of beer on the wall.\n"
@@ -23,8 +20,14 @@ struct Bottles {
                 + "Go to the store and buy some more, 99 bottles of beer on the wall.\n"
         default:
             return "\(count) bottles of beer on the wall, \(count) bottles of beer.\n"
-                + "Take one down and pass it around, \(count - 1) bottles of beer on the wall.\n"
+                + "Take one down and pass it around, \(count - 1) \(container(count-1)) of beer on the wall.\n"
         }
+    }
+    
+    func container(_ count:Int) -> String {
+        return count == 1
+            ? "bottle"
+            : "bottles"
     }
     
     func verses(_ start:Int, to end:Int) -> String {
